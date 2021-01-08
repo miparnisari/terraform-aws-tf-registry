@@ -26,8 +26,8 @@ variable "lambda_authorizer" {
 
 variable "api_type" {
   description = "Sets API type if you want a private API without a custom domain name, defaults to EDGE for public access"
-  default = ["EDGE"]
-  type = list(string)
+  default = "EDGE"
+  type = string
 }
 
 variable "api_access_policy" {
